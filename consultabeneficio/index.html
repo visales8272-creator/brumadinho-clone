@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta Benefício | PTR Brumadinho</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_IAt7QsBkcSoLSVa0_W0ywOs6ZhhS4lUqW-2FUg_iSj8.css?delta=0&amp;language=pt-br&amp;theme=fgv&amp;include=eJyNkdFyxCAIRX8ojZ-UQWWNuyiO6Kbp15ek2Wkf0tm8OHDvGRAAEWxTzHd0jatxIiPcuzScqBeYWkxIMeMA_3FyZrkZmuV2ZhEHnhzmVvnM1oLa-xZp8x0psRoLgq84oQgE7Xrkmb16XFGjmoDiFw742fTPD-OrjkDjkQ638DSB2AJ9SFtVCps0gdOS0UaKHjya3iLtOoXij4xzgwWFE5o_8big3VIZbYXs5T3ndGGc3nMyQy0Uw9wushVDJ6gXaWGd9QK7YwUqhAplltc-f5Wx59ItRZnRD7Lq5dLPsZ4RFzH7Oyb2nfAbm23z7Q" />
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_sbzWH7aYeCnQg8u-jv_k72ExhYeHvDZqd5z9JPHBfTQ.css?delta=1&amp;language=pt-br&amp;theme=fgv&amp;include=eJyNkdFyxCAIRX8ojZ-UQWWNuyiO6Kbp15ek2Wkf0tm8OHDvGRAAEWxTzHd0jatxIiPcuzScqBeYWkxIMeMA_3FyZrkZmuV2ZhEHnhzmVvnM1oLa-xZp8x0psRoLgq84oQgE7Xrkmb16XFGjmoDiFw742fTPD-OrjkDjkQ638DSB2AJ9SFtVCps0gdOS0UaKHjya3iLtOoXij4xzgwWFE5o_8big3VIZbYXs5T3ndGGc3nMyQy0Uw9wushVDJ6gXaWGd9QK7YwUqhAplltc-f5Wx59ItRZnRD7Lq5dLPsZ4RFzH7Oyb2nfAbm23z7Q" />
+    <link rel="icon" href="/sites/default/themes/custom/fgv/favicon.ico" type="image/vnd.microsoft.icon" />
+    <style>
+      body { background: #f5f7fa; }
+      .form-card { background:#fff; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,.08); padding:32px; }
+      .form-card h1 { color:#0a3d62; }
+      .btn-primary { background:#0a3d62; border-color:#0a3d62; }
+      .btn-primary:hover { background:#072a45; border-color:#072a45; }
+      .required::after { content:" *"; color:#c00; }
+    </style>
+  </head>
+  <body>
+    <header id="header" role="banner">
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-menu-top">
+        <div class="container">
+          <a href="/"><img src="/sites/default/files/locais/logo.png" alt="Início" class="img-fluid" style="height:50px;" /></a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/consultabeneficio/">Consulta Benefício</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main style="margin-top:90px; padding:40px 0;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="form-card">
+              <h1 class="mb-3">Consulta de Benefício - PTR-FGV Familias de  Brumadinho</h1>
+              <p class="text-muted mb-4">Preencha o formulário abaixo para consultar o status do seu benefício do Programa de Transferência de Renda (PTR).</p>
+              <form id="consultaForm" method="post" action="#">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label required" for="nome">Nome completo</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label required" for="cpf">CPF</label>
+                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label required" for="nascimento">Data de nascimento</label>
+                    <input type="date" class="form-control" id="nascimento" name="nascimento" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <label class="form-label" for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com">
+                  </div>
+                  <div class="col-md-8 mb-3">
+                    <label class="form-label" for="endereco">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco">
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="numero">Número</label>
+                    <input type="text" class="form-control" id="numero" name="numero">
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="bairro">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" name="bairro">
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade">
+                  </div>
+                  <div class="col-md-2 mb-3">
+                    <label class="form-label" for="uf">UF</label>
+                    <select class="form-select" id="uf" name="uf">
+                      <option value="">--</option>
+                      <option>MG</option><option>SP</option><option>RJ</option><option>ES</option><option>PR</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                    <label class="form-label" for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000">
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <label class="form-label" for="obs">Observações</label>
+                    <textarea class="form-control" id="obs" name="obs" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-primary">Consultar</button>
+                  <button type="reset" class="btn btn-outline-secondary">Limpar</button>
+                </div>
+              </form>
+              <div id="resultado" class="mt-4" style="display:none;">
+                <div class="alert alert-info">Consulta enviada. Em breve você receberá o resultado por e-mail.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-5 py-4" style="background:#0a3d62;color:#fff;">
+      <div class="container text-center">
+        <p class="mb-0">FGV-PTR | Brumadinho &copy; 2026. Call Center: 0800 032 8022 | documentosptr@fgv.br</p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('consultaForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        var nome = document.getElementById('nome').value;
+        var cpf = document.getElementById('cpf').value;
+        var nasc = document.getElementById('nascimento').value;
+        var tel = document.getElementById('telefone').value;
+        var email = document.getElementById('email').value;
+        var msg = 'Consulta de Benefício - PTR\n' +
+                  'Nome: ' + nome + '\n' +
+                  'CPF: ' + cpf + '\n' +
+                  'Nascimento: ' + nasc + '\n' +
+                  'Telefone: ' + tel + '\n' +
+                  'E-mail: ' + email;
+        var wa = localStorage.getItem('exubigode_wa_number') || '';
+        if(wa){
+          var url = 'https://wa.me/' + wa + '?text=' + encodeURIComponent(msg);
+          var a = document.createElement('a');
+          a.href = url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        } else {
+          document.getElementById('resultado').style.display='block';
+          document.getElementById('resultado').innerHTML = '<div class="alert alert-warning">Número do WhatsApp não configurado no painel admin. <a href="/exubigode/">Acesse o painel admin</a> e salve as configurações.</div>';
+        }
+      });
+    </script>
+  </body>
+</html>
